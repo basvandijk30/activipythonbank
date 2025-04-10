@@ -1,8 +1,13 @@
-# Zoekfilter URL parameters
-
+# URL parameters
+## Pagination
+0-indexed variabele om aan te geven waar de lijst start. Niet per pagina dus, maar per activiteit.
+```js
+start=0
+```
+## Zoekfilters
 __Filter URL__: https://activiteitenbank.scouting.nl/component/k2/itemlist/filter
 
-## Standaard parameters
+### Standaard parameters
 ```js
 // Joomla
 moduleId=119
@@ -12,13 +17,13 @@ ftitle=zoekveld+titel
 fitem_all=zoekveld+inhoud
 ```
 
-## Filter parameters
+### Filter parameters
 Voor elke aangevinkte filter wordt een categorie ID meegestuurd in een array. 
 ```js
 ...&category[]=1&category[]=2...
 ```
 
-### Activiteitengebied
+#### Activiteitengebied
 | id | categorie | opmerking |
 |---|---|---|
 |  4 | Buitenleven | |
@@ -37,7 +42,7 @@ Extra parameters (kunnen niet aangevinkt worden als zoekfilter).
 | 3 | Activiteitengebied | Naam van de set categoriën |
 | 6 | Activiteit | |
 
-### Duur
+#### Duur
 | id | categorie | opmerking |
 |---|---|---|
 | 14 | 5-15 min | |
@@ -54,7 +59,7 @@ Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 | 13 | Spelduur | Naam van de set categoriën |
 | 22 | Meerdere dagdelen / opkomsten | |
 
-### Groepsgrootte
+#### Groepsgrootte
 | id | categorie | opmerking |
 |---|---|---|
 | 24 | 1-8 personen | |
@@ -68,7 +73,7 @@ Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 |---|---|---|
 | 23 | Groepsgrootte | Naam van de set categoriën |
 
-### Leeftijdsgroep
+#### Leeftijdsgroep
 | id | categorie | opmerking |
 |---|---|---|
 | 29 | Bevers | |
@@ -92,7 +97,7 @@ De leeftijdscategoriën in deze parameters geven andere activiteiten terug dan 2
 | 63 | kader | |
 | 64 | alle leeftijden | |
 
-### Locatie
+#### Locatie
 | id | categorie | opmerking |
 |---|---|---|
 |  37 | Binnen | |
@@ -111,7 +116,7 @@ Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 |---|---|---|
 | 36 | Locatie | Naam van de set categoriën |
 
-### Awards
+#### Awards
 Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 | id | categorie | opmerking |
 |---|---|---|
@@ -119,7 +124,7 @@ Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 | 46 | Development award | |
 | 47 | Nature award | |
 
-### Voorbereidingstijd
+#### Voorbereidingstijd
 | id | categorie | opmerking |
 |---|---|---|
 | 49 | 5-15 min | |
@@ -131,7 +136,7 @@ Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 | 55 | Hele dag | |
 | 77 | Geen | |
 
-### Kampduur
+#### Kampduur
 Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 | id | categorie | opmerking |
 |---|---|---|
@@ -140,7 +145,7 @@ Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 | 70 | Midweek (kampduur) | |
 | 136 | 1 Nacht | |
 
-### Toekomstthema's
+#### Toekomstthema's
 Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 | id | categorie | opmerking |
 |---|---|---|
@@ -152,7 +157,7 @@ Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 | 110 | Ontwikkeling en uitdaging | |
 | 113 | Online | |
 
-### Kwalificatie
+#### Kwalificatie
 | id | categorie | opmerking |
 |---|---|---|
 | 123 | CWO Sloep/Motorvlet | |
@@ -161,7 +166,7 @@ Extra parameters (kunnen niet aangevinkt worden als zoekfilter)
 | 132 | CWO Kielboot | |
 | 135 | EHBO | |
 
-### Overig
+#### Overig
 Deze categoriën geven geen resultaten terug of hebben een onbekende functie.
 | id | categorie | opmerking |
 |---|---|---|
@@ -169,4 +174,4 @@ Deze categoriën geven geen resultaten terug of hebben een onbekende functie.
 | 72 | Stuiterbadge |Geen resultaten |
 | 73 | Badges / Insignes | Geen resultaten |
 | 76 | ? | Geeft alleen  "2048" terug |
-| 83 | test | |
+| 83 | test | Geen resultaten |
